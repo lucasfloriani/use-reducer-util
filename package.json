@@ -13,6 +13,10 @@
     "useReducer",
     "util"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasfloriani/use-reducer-utils.git"
+  },
   "author": "Lucas Floriani <lucas.floriane@gmail.com>",
   "license": "MIT",
   "devDependencies": {
