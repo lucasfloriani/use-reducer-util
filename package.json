@@ -1,0 +1,21 @@
+{
+  "name": "use-reducer-util",
+  "version": "1.0.0",
+  "description": "A helper to create the reducer of useReducer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "keywords": [
+    "react",
+    "useReducer",
+    "util"
+  ],
+  "author": "Lucas Floriani <lucas.floriane@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  }
+}
