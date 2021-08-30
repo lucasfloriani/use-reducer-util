@@ -15,7 +15,9 @@ const createReducer = <State, ActionsPayload extends ActionsFormat<string>>(
   actionMapper: ActionsMapper<State, ActionsPayload>
 ) => (state: State, action: ActionsPayload) => {
   const actionFunc = actionMapper?.[action.type as ActionsPayload['type']]
-  return actionFunc ? actionFunc?.(state, action as ActionExtraction<ActionsPayload, typeof action.type>) : state
+  return actionFunc
+    ? actionFunc?.(state, action as ActionExtraction<ActionsPayload, typeof action.type>) || state
+    : state
 }
 
 export default createReducer
