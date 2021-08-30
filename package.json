@@ -1,6 +1,6 @@
 {
   "name": "use-reducer-util",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A helper to create the reducer of useReducer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
