@@ -8,7 +8,7 @@ type ActionsMapper<State, ActionsPayload extends ActionsFormat<string>> = {
   [key in ActionsPayload['type']]: (
     state: State,
     action: ActionExtraction<ActionsPayload, key>
-  ) => void
+  ) => State
 }
 
 const createReducer = <State, ActionsPayload extends ActionsFormat<string>>(
