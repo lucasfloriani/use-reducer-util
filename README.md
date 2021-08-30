@@ -2,8 +2,18 @@
 
 It's a util that removes the boilerplate needed to create the reducer function of the hook useReducer
 
+## How to install
+
+```txt
+yarn add use-reducer-util
+npm install use-reducer-util
+```
+
+## How to use
+
 ```ts
 import { useReducer } from 'react'
+import createReducer from 'use-reducer-util'
 
 type InitialStateProps = {
   total: number
@@ -21,7 +31,7 @@ const reducer = createReducer<InitialStateProps, ReducerActionProps>({
 
 const initialState: InitialStateProps = { total: 0 }
 
-export const useCounter = () => {
+const useCounter = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const increase = useCallback(() => dispatch({ type: 'INCREASE' }), [dispatch])
